@@ -1,0 +1,124 @@
+:root {
+  --claret: #7A263A;
+  --skyblue: #1BB1E1;
+  --dark: #111;
+  --light: #fff;
+  --gray: #f4f4f4;
+}
+
+body {
+  background-color: var(--gray);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header, footer {
+  background-color: var(--claret);
+  color: var(--light);
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.formasi .col-auto {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 110px;
+}
+
+.formasi img {
+  border: 2px solid var(--claret);
+}
+
+.formasi .badge {
+  font-size: 0.75rem;
+}
+
+form .form-select,
+form .form-control {
+  max-width: 300px;
+}
+
+button,
+.btn {
+  border-radius: 20px;
+}
+
+h3, h4, h5 {
+  font-weight: bold;
+  color: var(--claret);
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: var(--light);
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #000;
+}
+
+body.dark-mode .formasi .col-auto {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .formasi img {
+  border-color: var(--skyblue);
+}
+
+.formasi .col-auto {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.formasi .col-auto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.formasi img {
+  transition: transform 0.2s ease;
+}
+
+.formasi img:hover {
+  transform: scale(1.05);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.kartu-pemain {
+  cursor: grab;
+  transition: transform 0.2s ease;
+}
+
+.kartu-pemain:active {
+  transform: scale(1.05);
+}
+
+.posisi-area.drag-over {
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 10px;
+}
